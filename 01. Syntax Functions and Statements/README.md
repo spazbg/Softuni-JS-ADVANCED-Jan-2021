@@ -1,0 +1,5 @@
+![plot](./img/01. JS-Advanced-Syntax-Functions-and-Statements-Exercise-1.png)
+![plot](./img/01. JS-Advanced-Syntax-Functions-and-Statements-Exercise-2.png)
+![plot](./img/01. JS-Advanced-Syntax-Functions-and-Statements-Exercise-3.png)
+![plot](./img/01. JS-Advanced-Syntax-Functions-and-Statements-Exercise-4.png)
+![plot](./img/01. JS-Advanced-Syntax-Functions-and-Statements-Exercise-5.png)
