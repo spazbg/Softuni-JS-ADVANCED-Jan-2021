@@ -1,0 +1,5 @@
+![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/01.%20Syntax%20Functions%20and%20Statements/img/01.%20JS-Advanced-Syntax-Functions-and-Statements-Exercise-1.png)
+![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/01.%20Syntax%20Functions%20and%20Statements/img/01.%20JS-Advanced-Syntax-Functions-and-Statements-Exercise-2.png)
+![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/01.%20Syntax%20Functions%20and%20Statements/img/01.%20JS-Advanced-Syntax-Functions-and-Statements-Exercise-3.png)
+![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/01.%20Syntax%20Functions%20and%20Statements/img/01.%20JS-Advanced-Syntax-Functions-and-Statements-Exercise-4.png)
+![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/01.%20Syntax%20Functions%20and%20Statements/img/01.%20JS-Advanced-Syntax-Functions-and-Statements-Exercise-5.png)
