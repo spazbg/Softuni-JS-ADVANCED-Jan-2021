@@ -1,9 +1,15 @@
-![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/02.%20Arrays%20and%20Nested%20Arrays/img/02.%20JS-Advanced-Arrays-and-Nested-Arrays-Exercise-1.png)
-![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/02.%20Arrays%20and%20Nested%20Arrays/img/02.%20JS-Advanced-Arrays-and-Nested-Arrays-Exercise-2.png)
-![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/02.%20Arrays%20and%20Nested%20Arrays/img/02.%20JS-Advanced-Arrays-and-Nested-Arrays-Exercise-3.png)
-![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/02.%20Arrays%20and%20Nested%20Arrays/img/02.%20JS-Advanced-Arrays-and-Nested-Arrays-Exercise-4.png)
-![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/02.%20Arrays%20and%20Nested%20Arrays/img/02.%20JS-Advanced-Arrays-and-Nested-Arrays-Exercise-5.png)
-![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/02.%20Arrays%20and%20Nested%20Arrays/img/02.%20JS-Advanced-Arrays-and-Nested-Arrays-Exercise-6.png)
-![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/02.%20Arrays%20and%20Nested%20Arrays/img/02.%20JS-Advanced-Arrays-and-Nested-Arrays-Exercise-7.png)
-![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/02.%20Arrays%20and%20Nested%20Arrays/img/02.%20JS-Advanced-Arrays-and-Nested-Arrays-Exercise-8.png)
+![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/03.%20Objects%20and%20Composition/img/03.%20JS-Advanced-Objects-and-Composition-Exercise-01.png)
+![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/03.%20Objects%20and%20Composition/img/03.%20JS-Advanced-Objects-and-Composition-Exercise-02.png)
+![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/03.%20Objects%20and%20Composition/img/03.%20JS-Advanced-Objects-and-Composition-Exercise-03.png)
+![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/03.%20Objects%20and%20Composition/img/03.%20JS-Advanced-Objects-and-Composition-Exercise-04.png)
+![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/03.%20Objects%20and%20Composition/img/03.%20JS-Advanced-Objects-and-Composition-Exercise-05.png)
+![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/03.%20Objects%20and%20Composition/img/03.%20JS-Advanced-Objects-and-Composition-Exercise-06.png)
+![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/03.%20Objects%20and%20Composition/img/03.%20JS-Advanced-Objects-and-Composition-Exercise-07.png)
+![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/03.%20Objects%20and%20Composition/img/03.%20JS-Advanced-Objects-and-Composition-Exercise-08.png)
+![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/03.%20Objects%20and%20Composition/img/03.%20JS-Advanced-Objects-and-Composition-Exercise-09.png)
+![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/03.%20Objects%20and%20Composition/img/03.%20JS-Advanced-Objects-and-Composition-Exercise-10.png)
+![plot](https://raw.githubusercontent.com/spazbg/Softuni-JS-ADVANCED-Jan-2021/main/03.%20Objects%20and%20Composition/img/03.%20JS-Advanced-Objects-and-Composition-Exercise-11.png)
+
+
+
 
