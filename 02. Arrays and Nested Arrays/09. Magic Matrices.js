@@ -1,6 +1,6 @@
 function solve(arr) {
   //Намираме сумите на всички редове
-  let rowSums = arr.map((el) => el.reduce((a, b) => a + b));
+  let rowSums = arr.map((el) => el.reduce((a, b) => a + b), 0);
   // for (let i = 0; i < arr.length; i++) {
   //     let row = arr[i];
   //     let sum = row.reduce((result, curr) => (result + curr), 0);
