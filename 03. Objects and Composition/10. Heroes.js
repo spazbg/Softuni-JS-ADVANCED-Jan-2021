@@ -10,7 +10,7 @@ function solve() {
     fight: () => {
       console.log(`${state.name} slashes at the foe!`);
       state.stamina--;
-    },
+    }
   });
 
   const fighter = (name) => {
@@ -29,7 +29,7 @@ function solve() {
       health: 100,
       mana: 100,
     };
-    
+
     return Object.assign(state, canCast(state));
   };
 
