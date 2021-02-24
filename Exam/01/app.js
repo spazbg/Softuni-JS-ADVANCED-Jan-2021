@@ -64,7 +64,6 @@ function solve() {
   }
 
   function sortArchivedElements() {
-    console.log();
     let allLis = Array.from(archiveArea.querySelectorAll("li"));
     allLis.sort((a, b) => a.textContent.localeCompare(b.textContent));
     archiveArea.innerHTML = "";
