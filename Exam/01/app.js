@@ -1,124 +1,87 @@
-function solve(){
+function solve() {
+  const authorTextBox = document.getElementById("creator");
+  const titleTextBox = document.getElementById("title");
+  const categoryTextBox = document.getElementById("category");
+  const contentTextBox = document.getElementById("content");
+  const postsArea = document.querySelector("main section");
+  const archiveArea = document.querySelector("section[class='archive-section'] ol");
 
-   function sortList(list) {
-      var list, i, switching, b, shouldSwitch;
+  const createBtn = document.querySelector('button[class="btn create"]');
+  createBtn.addEventListener("click", onClick);
 
-      switching = true;
+  function onClick(event) {
+    event.preventDefault();
 
-      while (switching) {
-        switching = false;
-        b = list.getElementsByTagName("li");
+    let article = createElement("article");
 
-        for (i = 0; i < (b.length - 1); i++) {
-          shouldSwitch = false;
+    let h1 = createElement("h1", `${titleTextBox.value}`);
+    let pCategory = createElement("p", "Category:");
+    let pCategoryStrong = createElement("strong", `${categoryTextBox.value}`);
+    pCategory.appendChild(pCategoryStrong);
 
-          if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
-            shouldSwitch = true;
-            break;
-          }
-        }
+    let pCreator = createElement("p", "Creator:");
+    let pCreatorStrong = createElement("strong", `${authorTextBox.value}`);
+    pCreator.appendChild(pCreatorStrong);
 
-        if (shouldSwitch) {
-          b[i].parentNode.insertBefore(b[i + 1], b[i]);
-          switching = true;
-        }
-      }
-   }
+    let pText = createElement("p", `${contentTextBox.value}`);
 
+    let divBtns = createElement("div", undefined, "buttons");
+    let delBtn = createElement("button", "Delete", "btn delete");
+    delBtn.addEventListener("click", onClickDelBtn);
+    let archiveBtn = createElement("button", "Archive", "btn archive");
+    archiveBtn.addEventListener("click", onClickArchiveBtn);
 
-   function deleteArticle(event) {
-      event.preventDefault();
+    divBtns.appendChild(delBtn);
+    divBtns.appendChild(archiveBtn);
 
-      // get and remove article
-      const buttons = event.target.parentNode;
-      const article = buttons.parentNode;
-      article.remove();
-   }
+    article.appendChild(h1);
+    article.appendChild(pCategory);
+    article.appendChild(pCreator);
+    article.appendChild(pText);
+    article.appendChild(divBtns);
 
-   function archiveArticle(event) {
-      event.preventDefault();
+    postsArea.appendChild(article);
 
-      // get title element text
-      const buttons = event.target.parentNode;
-      const article = buttons.parentNode;
-      const titleElement = article.getElementsByTagName('h1')[0];
-      const titleText = titleElement.innerHTML;
+    authorTextBox.value = "";
+    titleTextBox.value = "";
+    categoryTextBox.value = "";
+    contentTextBox.value = "";
+  }
 
-      // get archive ordered list & create list item
-      const archiveSection = document.getElementsByClassName("archive-section")[0]
-      const orderedList = archiveSection.getElementsByTagName('ol')[0];
-      const listItem = document.createElement('li');
+  function onClickDelBtn(event) {
+    event.target.parentNode.parentNode.remove();
+  }
+  function onClickArchiveBtn(event) {
+    let titleName = event.target.parentNode.parentNode.firstChild.textContent;
+    let li = document.createElement("li");
+    li.textContent = titleName;
 
-      // update list and remove article
-      listItem.appendChild(document.createTextNode(titleText));
-      orderedList.appendChild(listItem);
-      sortList(orderedList);
-      article.remove();
-   }
+    event.target.parentNode.parentNode.remove();
 
-   function createArticle(event) {
-      event.preventDefault();
+    archiveArea.appendChild(li);
 
-      // form data
-      const creator = document.getElementById('creator').value;
-      const title = document.getElementById('title').value;
-      const category = document.getElementById('category').value;
-      const content = document.getElementById('content').value;
+    sortArchivedElements();
+  }
 
-      // get DOM elements
-      const siteContent = document.getElementsByClassName("site-content")[0];
-      const main = siteContent.getElementsByTagName('main')[0];
-      const section = main.getElementsByTagName('section')[0];
+  function sortArchivedElements() {
+    console.log();
+    let allLis = Array.from(archiveArea.querySelectorAll("li"));
+    allLis.sort((a, b) => a.textContent.localeCompare(b.textContent));
+    archiveArea.innerHTML = "";
+    allLis.forEach((li) => archiveArea.appendChild(li));
+  }
 
-      // create new elements
-      const article = document.createElement("article");
-      const titleElement = document.createElement('h1');
-      const categoryElement = document.createElement('p');
-      const creatorElement = document.createElement('p');
-      const contentElement = document.createElement('p');
-      const categoryElementText = document.createElement('strong');
-      const creatorElementText = document.createElement('strong');
-      const buttons = document.createElement('div');
-      const deleteBtn = document.createElement('button');
-      const archiveBtn = document.createElement('button');
+  function createElement(type, content, className) {
+    const result = document.createElement(type);
 
-      // set data to elements
-      titleElement.appendChild(document.createTextNode(title));
-      categoryElementText.appendChild(document.createTextNode(category));
-      creatorElementText.appendChild(document.createTextNode(creator));
-      categoryElement.appendChild(document.createTextNode("Category: "));
-      creatorElement.appendChild(document.createTextNode("Creator: "));
-      categoryElement.appendChild(categoryElementText);
-      creatorElement.appendChild(creatorElementText);
-      contentElement.appendChild(document.createTextNode(content));
-      deleteBtn.appendChild(document.createTextNode('Delete'));
-      archiveBtn.appendChild(document.createTextNode('Archive'));
-      buttons.appendChild(deleteBtn);
-      buttons.appendChild(archiveBtn);
+    if (content) {
+      result.textContent = content;
+    }
 
-      // add classes
-      buttons.classList.add("buttons");
-      deleteBtn.classList.add("btn");
-      archiveBtn.classList.add("btn");
-      deleteBtn.classList.add("delete");
-      archiveBtn.classList.add("archive");
+    if (className) {
+      result.className = className;
+    }
 
-      // add event listeners
-      deleteBtn.addEventListener("click", deleteArticle);
-      archiveBtn.addEventListener("click", archiveArticle);
-
-      // append elements
-      article.appendChild(titleElement);
-      article.appendChild(categoryElement);
-      article.appendChild(creatorElement);
-      article.appendChild(contentElement);
-      article.appendChild(buttons);
-
-      // update DOM
-      section.appendChild(article);
-   }
-
-   const createBtn = document.getElementsByClassName('create')[0];
-   createBtn.addEventListener("click", createArticle);
-
+    return result;
+  }
 }
